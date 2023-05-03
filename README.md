@@ -35,7 +35,14 @@ If the tests of interest have test statistics that can be assumed to follow a mu
 
 Let's try an example.
 
+```
+library(poolr)
+# copy LD correlation matrix into r (see help(grid2ip) for details on these data)
+r <- grid2ip.ld
+```
+
+
 ### References
-1. Cinar,O.&Viechtbauer,W.(2022).Thepoolrpackageforcombiningindependentanddependent pvalues.JournalofStatisticalSoftware,101(1),1–42.https://doi.org/10.18637/jss.v101.i01
+1. Cinar,O.&Viechtbauer,W.(2022).The poolr package for combining independent and dependent pvalues. Journal of Statistical Software,101(1),1–42.https://doi.org/10.18637/jss.v101.i01
 
 
