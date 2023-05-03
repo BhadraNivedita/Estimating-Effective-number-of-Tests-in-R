@@ -1,6 +1,6 @@
 # Estimating-Effective-number-of-Tests-in-R
 
-The function estimates the effective number of tests based on one of four different methods. All methods work by extracting the eigenvalues from the $\(R\)$ matrix supplied via the $R$ argument (or from the eigenvalues directly passed via the eigen argument). Letting $\(\lambda_i\)$ denote the \(i\)th eigenvalue of this matrix (with $\(i = 1, \ldots, k\)$) in decreasing order, the effective number of tests $(\(m\))$ is estimated as follows.
+The function estimates the effective number of tests based on one of four different methods. All methods work by extracting the eigenvalues from the $\(R\)$ matrix supplied via the $R$ argument (or from the eigenvalues directly passed via the eigen argument). Letting $\(\lambda_i\)$ denote the \(i\)th eigenvalue of this matrix (with \(i = 1, \ldots, k\)) in decreasing order, the effective number of tests $(\(m\))$ is estimated as follows.
 
 
 ### Method by Nyholt (2004)
