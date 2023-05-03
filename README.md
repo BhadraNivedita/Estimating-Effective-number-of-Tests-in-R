@@ -33,12 +33,16 @@ The $\(R\)$ matrix should reflect the dependence structure among the tests. Ther
 
 If the tests of interest have test statistics that can be assumed to follow a multivariate normal distribution and a matrix is available that reflects the correlations among the test statistics (which might be approximated by the correlations among the interchanging independent or dependent variables), then the mvnconv function can be used to convert this correlation matrix into the correlations among the (one- or two-sided) \(p\)-values, which in turn can then be passed to the R argument. 
 
-Let's try an example.
+Let's try an example(The following example is taken from R documentation).
 
 ```
 library(poolr)
 # copy LD correlation matrix into r (see help(grid2ip) for details on these data)
 r <- grid2ip.ld
+```
+```
+# estimate the effective number of tests based on the LD correlation matrix
+meff(r, method = "nyholt")
 ```
 
 
