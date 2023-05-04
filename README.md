@@ -58,7 +58,7 @@ mvnconv(r, target = "p", cov2cor = TRUE)[1:5,1:5] # show only rows/columns 1-5
 meff(mvnconv(r, target = "p", cov2cor = TRUE), method = "nyholt")
 ```
 
-Similar estimation can be obtained with other three nethods:
+Similar estimation can be obtained with other three methods:
 
 ```
 meff(r, method = "liji")
