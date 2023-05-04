@@ -58,6 +58,19 @@ mvnconv(r, target = "p", cov2cor = TRUE)[1:5,1:5] # show only rows/columns 1-5
 meff(mvnconv(r, target = "p", cov2cor = TRUE), method = "nyholt")
 ```
 
+Similar estimation can be obtained with other three nethods:
+
+```
+meff(r, method = "liji")
+meff(r, method = "gao")
+meff(r, method = "galwey")
+
+
+meff(mvnconv(r, target = "p", cov2cor = TRUE), method = "liji")
+meff(mvnconv(r, target = "p", cov2cor = TRUE), method = "gao")
+meff(mvnconv(r, target = "p", cov2cor = TRUE), method = "galwey")
+
+```
 
 ### References
 1. Cinar,O.&Viechtbauer,W.(2022).The poolr package for combining independent and dependent pvalues. Journal of Statistical Software,101(1),1–42.https://doi.org/10.18637/jss.v101.i01
